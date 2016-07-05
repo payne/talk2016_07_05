@@ -8,12 +8,12 @@
 
 # Screen shot of the bubble chart
 
+[Bubble_Chart.png]
+
 ---
 
-
-
 ## Quickstart
-  1. Read Sophie's blog, for an overview.  Plan to return later.  [SQ3R](https://en.wikipedia.org/wiki/SQ3R) FTW
+  1. Read Sophie's blog, for an overview.  Read it again later.  [SQ3R](https://en.wikipedia.org/wiki/SQ3R) FTW
   1. `git clone front end`
      1. `cd front-end`
      1. `npm install`
@@ -27,22 +27,34 @@
   1. Launch http://postgresapp.com
   1. Install ruby on rails....
      1. `\curl -sSL https://get.rvm.io | bash -s stable`
+
+
 ---
 
-   
-  1. git clone back-end
-     1. cd back-end
-     1. bundle
-     1. bin/rake db:setup # Behold all the data it scrapes!
-     1. bin/rails s
-  1. Edit front-end as described in the README.md to point at your backend on localhost.   Don't forget to change the https to http.  
-     1. ember serve
-     1. `rails c` or `psql` etc to change the data....
-     1. TODO(MGP): Try this!!
+## Clone and run the server
 
-## Walk through Sophie's blog:
-   1. D3 can be used via the xyzzy component
-      1. pre-configured with a few things.
-      1. https://github.com/Addepar/ember-charts  
-      1. Demo at http://output.jsbin.com/zujifu/
-         1. My copy at http://jsbin.com/zujifu         
+1. `git clone back-end`
+1. `cd back-end`
+1. `bundle`
+1. bin/rake db:setup`
+   1. Behold all the data it scrapes!
+1. `bin/rails s`
+
+----
+
+### Connect to server on localhost
+
+1. Edit front-end as described in the README.md to point at your backend on localhost.   Don't forget to change the https to http.  
+1. ember serve
+1. `rails c` or `psql` etc to change the data....
+1. TODO(MGP): Try this!! and then demo it in the talk  
+
+----
+
+## Walk through Sophie's blog
+
+1. D3 can be used via the xyzzy component
+1. pre-configured with a few things.
+1. https://github.com/Addepar/ember-charts  
+1. Demo at http://output.jsbin.com/zujifu/
+1. My copy at http://jsbin.com/zujifu         
