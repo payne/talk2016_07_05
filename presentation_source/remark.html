@@ -76,20 +76,21 @@
 ---
 
 # Walk through Sophie's blog
-1. `D3 can be used via the xyzzy component`
+1. D3 can be used via the ember-charts component from [Addepar](https://github.com/Addepar/ember-charts)
+   1. `ember install ember-charts`
 1. "Now that the Ember Charts library is installed, we have access to the {{bubble-chart}} component, which we can render like this:"
-1.
-```HTML5
-<div class="chart-container">
-  {{bubble-chart data=bubbleData}}
-</div>
-```
+
+   ```HTML5
+   <div class="chart-container">
+     {{bubble-chart data=bubbleData}}
+   </div>
+   ```
 
 ---
 
 # Data
 1. "The bubble chart component expects a data collection that is structured like this:"
-   1.
+
    ```javascript
    [
     {:label=>"some item", :value=> <some amount>},
@@ -97,7 +98,16 @@
     {:label=>"some item", :value=> <some amount>}
    ]
    ```
-1. The rails api returns the data in that shape
+1. The rails api [model](https://github.com/SophieDeBenedetto/whoipedia-api/blob/master/app/models/season.rb) returns the data in that shape
+   
+    ```javascript
+    [{:label=>"dalek", :value=>7000},
+     {:label=>"cybermen", :value=>4500},
+     {:label=>"ood", :value=>3000},
+     {:label=>"slitheen", :value=>2000},
+     {:label=>"master", :value=>2000}]
+     ```
+   1. Sophie writes "I multiplied the number of episodes for each alien by 500, so that the individual circles of the bubble chart would be appropriately sized for the design of the app."
 
 ---
 
